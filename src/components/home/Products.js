@@ -92,6 +92,7 @@ const Item = styled.li`
 
   &:hover {
     border: 2px solid #800020;
+    transform: scale(1.1);
   }
 `;
 
