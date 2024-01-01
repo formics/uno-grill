@@ -16,7 +16,7 @@ const NavigationBar = () => {
     <>
       <Waypoint
         onEnter={() => {
-          setShowBackground(false);
+          setShowBackground(showMenu ? showMenu : false);
         }}
         onLeave={() => {
           setShowBackground(true);
@@ -71,13 +71,13 @@ const Background = styled.div`
 const Content = styled.nav`
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 25px 0;
   transition: 0.2s all;
   align-items: center;
 `;
 
 const Logo = styled.span`
-  font-size: 50px;
+  font-size: 45px;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 50px;
@@ -85,7 +85,7 @@ const Logo = styled.span`
 `;
 
 const MenuIcon = styled(CgMenuRound)`
-  font-size: 70px;
+  font-size: 60px;
   cursor: pointer;
   transition: 0.1s all;
 
@@ -95,7 +95,7 @@ const MenuIcon = styled(CgMenuRound)`
 `;
 
 const LogoIcon = styled(PiHamburgerBold)`
-  font-size: 50px;
+  font-size: 45px;
 `;
 
 const LogoBox = styled.div`

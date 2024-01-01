@@ -17,7 +17,7 @@ export default HeroImage;
 
 const ImageBox = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: green;
   background-image: url("./img/hero.jpg");
   background-repeat: no-repeat;

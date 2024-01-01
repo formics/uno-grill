@@ -72,7 +72,7 @@ export default NavigationMenu;
 
 const Background = styled.div`
   z-index: 1;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 110px);
   background-color: black;
   border-top: 2px solid #800020;
 `;
