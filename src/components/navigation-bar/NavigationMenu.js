@@ -4,7 +4,7 @@ import Container from "../ui/Container";
 // Icons
 import { MdOutlineOutdoorGrill } from "react-icons/md";
 import { GiChickenLeg, GiSandwich, GiMeal } from "react-icons/gi";
-import { CiFries, CiClock2, CiImageOn } from "react-icons/ci";
+import { CiFries, CiClock2, CiImageOn, CiPhone } from "react-icons/ci";
 
 const NavigationMenu = () => {
   return (
@@ -60,6 +60,17 @@ const NavigationMenu = () => {
 
             <Item>
               <ItemTitle>Kontakt</ItemTitle>
+
+              <LinksList>
+                <LinkItem>
+                  <PhoneIcon />
+                  <LinkText>066 509 53 58</LinkText>
+                </LinkItem>
+                <LinkItem>
+                  <PhoneIcon />
+                  <LinkText>062 819 51 46</LinkText>
+                </LinkItem>
+              </LinksList>
             </Item>
           </List>
         </Content>
@@ -147,5 +158,9 @@ const ClockIcon = styled(CiClock2)`
 `;
 
 const ImageIcon = styled(CiImageOn)`
+  font-size: 30px;
+`;
+
+const PhoneIcon = styled(CiPhone)`
   font-size: 30px;
 `;
